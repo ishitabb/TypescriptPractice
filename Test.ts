@@ -28,11 +28,17 @@ function getRandomBusinessValue(min: number, max: number) {
 
 var business = getRandomBusinessValue(0,1000)
 console.log(business)
-//1.  Program to create a list of key value pairs, fetch keys dynamically and assign values dynamically, use value in a function
+//1. Program to create a list of key value pairs, fetch keys dynamically and assign values dynamically, use value in a function
+let obj : {[testKey: string] : [testValue : string] } = {}
+let sampleObjKeys = ['key1', 'key2', 'key3']
+let sampleObjValues = ['value1', 'value2', 'value3']
 
+function setObjItem(passedKey:any, passedValue: any){
+    obj.passedKey = passedKey
+    console.log(obj)
+}
 
-
-
+setObjItem(sampleObjKeys[1], sampleObjValues[2])
 
 //2. Create a function that reverses a string. Ensure the input is typed as a string in TypeScript.
 // Why It’s Useful: Practices string manipulation and type safety.
